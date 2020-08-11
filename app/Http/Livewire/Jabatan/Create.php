@@ -23,10 +23,10 @@ class Create extends Component
     		'nip' => $this->nip,
     		'jabatan' => $this->jabatan
     	]);
-		$this->inputDelete();
-		$this->emit('tampilData', $jabatan);
-		// session()->flash('success', 'Data successfully add.');
-		// return redirect()->to('home');
+		// $this->inputDelete();
+		// $this->emit('tampilData', $jabatan);
+		session()->flash('success', 'Data successfully add.');
+		return redirect()->to('home');
 	}
 	
 	public function inputDelete()

@@ -11,7 +11,7 @@ class Index extends Component
     use WithPagination;
     
     // public $jabatan = false;
-    protected $listeners = ['tampilData'];
+    // protected $listeners = ['tampilData'];
 
     public function render()
     {
@@ -20,9 +20,9 @@ class Index extends Component
         ]);
     }
 
-    public function tampilData($jabatan)
-    {
-        // dd($jabatan);
+    // public function tampilData($jabatan)
+    // {
+    //     // dd($jabatan);
         
-    }
+    // }
 }

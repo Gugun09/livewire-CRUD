@@ -1,7 +1,5 @@
 <div>
 	{{-- A good traveler has no fixed plans and is not intent upon arriving. --}}
-	<livewire:jabatan.create />
-	<br>
     <a href="{{ route('jabatan.create') }}" class="btn btn-primary mb-3">Tambah</a>
     <div class="container">
     	<div class="row">
@@ -13,6 +11,7 @@
 				      <th scope="col">Nama</th>
 				      <th scope="col">Nip</th>
 				      <th scope="col">Jabatan</th>
+				      <th scope="col">Aksi</th>
 				    </tr>
 				  </thead>
 				  <tbody>
@@ -22,6 +21,10 @@
 				      <td>{{ $data->nama }}</td>
 				      <td>{{ $data->nip }}</td>
 				      <td>{{ $data->jabatan }}</td>
+				      <td>
+				      	<a href="" class="btn btn-warning btn-sm"><i class="fa fa-pencil"></i></a>
+				      	<a href="" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
+				      </td>
 				    </tr>
 					@endforeach
 				  </tbody>

@@ -35,8 +35,9 @@
 		    					@enderror
 		    				</div>
 		    				<div class="form-group">
-		    					<label for="" class="form-group"></label>
-		    					<button type="submit" class="btn btn-primary float-right">Simpan</button>
+								<label for="" class="form-group"></label>
+								<button type="submit" class="btn btn-primary float-right">Simpan</button>
+								<a href="{{ route('home') }}" class="btn btn-info float-right mr-3">Back</a>
 		    				</div>
 		    			</form>
 		    		</div>
