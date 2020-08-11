@@ -36,8 +36,8 @@
 		    				</div>
 		    				<div class="form-group">
 								<label for="" class="form-group"></label>
-								<button type="submit" class="btn btn-primary float-right">Simpan</button>
-								<a href="{{ route('home') }}" class="btn btn-info float-right mr-3">Back</a>
+								<button type="submit" class="btn btn-primary float-right"><i class="fa fa-save"></i></button>
+								<a href="{{ route('home') }}" class="btn btn-info float-right mr-3"><i class="fa fa-arrow-left"></i></a>
 		    				</div>
 		    			</form>
 		    		</div>

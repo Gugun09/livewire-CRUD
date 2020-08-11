@@ -23,3 +23,4 @@ Route::get('api', 'ApiController@api');
 Route::get('/home', 'HomeController@index')->name('home');
 // Route::livewire('/jabatan','jabatan.index')->name('jabatan.index');
 Route::livewire('/jabatan/create','jabatan.create')->name('jabatan.create');
+Route::livewire('/jabatan/edit/{id}', 'jabatan.edit')->name('jabatan.edit');
