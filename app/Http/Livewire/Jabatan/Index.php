@@ -24,7 +24,7 @@ class Index extends Component
         if ($delete) {
             $delete->delete();
 
-            session()->flash('success', 'Data successfully deleted.');
+            session()->flash('danger', 'Data successfully deleted.');
             return redirect()->to('home');
         }
     }

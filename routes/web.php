@@ -24,3 +24,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 // Route::livewire('/jabatan','jabatan.index')->name('jabatan.index');
 Route::livewire('/jabatan/create','jabatan.create')->name('jabatan.create');
 Route::livewire('/jabatan/edit/{id}', 'jabatan.edit')->name('jabatan.edit');
+Route::get('/jabatan/profile','HomeController@profile')->name('jabatan.upload');
+Route::post('/jabatan/profile','HomeController@update')->name('update');
