@@ -13,9 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Format tanggal
+Route::get('tanggal','ApiController@tanggal');
+
+Route::get('/','ApiController@userinfo');
+Route::get('/geoip', 'ApiController@geoip');
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Auth::routes();
 
